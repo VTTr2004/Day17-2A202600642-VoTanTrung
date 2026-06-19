@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Language Practice Discovery Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">LD</span>
+          <div>
+            <strong>Discovery Demo</strong>
+            <span>3-user simulator</span>
+          </div>
+        </div>
+
+        <nav class="prototype-nav" aria-label="Prototype">
+          <button class="nav-item is-active" data-prototype="woz">
+            <span class="icon">1</span>
+            Wizard of Oz
+          </button>
+          <button class="nav-item" data-prototype="pool">
+            <span class="icon">2</span>
+            Partner Pool
+          </button>
+          <button class="nav-item" data-prototype="omegle">
+            <span class="icon">3</span>
+            Omegle English
+          </button>
+        </nav>
+
+        <div class="demo-note">
+          <strong>Cach dien demo</strong>
+          <p>Mot man hinh may tinh hien 3 dien thoai. Moi dien thoai la mot tai khoan hoc sinh rieng de test nhieu case hon.</p>
+        </div>
+
+        <button class="secondary full" id="resetDemo">Reset demo data</button>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="prototypeEyebrow">Prototype 1</p>
+            <h1 id="prototypeTitle">Wizard of Oz Chat</h1>
+          </div>
+          <div class="metrics" id="metrics"></div>
+        </header>
+
+        <section class="phone-stage">
+          <article class="phone" id="phoneA">
+            <div class="phone-frame">
+              <div class="phone-status">
+                <span>9:41</span>
+                <span>5G</span>
+              </div>
+              <div class="phone-app" id="screenA"></div>
+            </div>
+            <p class="phone-caption" id="captionA">Account A</p>
+          </article>
+
+          <article class="phone" id="phoneB">
+            <div class="phone-frame">
+              <div class="phone-status">
+                <span>9:41</span>
+                <span>Wi-Fi</span>
+              </div>
+              <div class="phone-app" id="screenB"></div>
+            </div>
+            <p class="phone-caption" id="captionB">Account B</p>
+          </article>
+
+          <article class="phone" id="phoneC">
+            <div class="phone-frame">
+              <div class="phone-status">
+                <span>9:41</span>
+                <span>4G</span>
+              </div>
+              <div class="phone-app" id="screenC"></div>
+            </div>
+            <p class="phone-caption" id="captionC">Account C</p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
